@@ -11,7 +11,9 @@ namespace H1Galactica
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Position _Position { get; set; }
+        public virtual Position _Position { get; set; }
+        
+        
         internal class Position
         {
             public int Y { get; set; }

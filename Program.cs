@@ -14,7 +14,8 @@ namespace H1Galactica
             {
                 Id = 1,
                 Name = "Sun",
-                _Position = (new SpaceObjects.Position(){X = 0, Y = 0}),
+                //_Position = (new SpaceObjects.Position(){X = 5, Y = 0}),
+                _Position = new Star.Position{ X = 0, Y = 1 },
                 _Startype = Startype.YellowDwarf,
                 Temperature = 5500
 
@@ -30,6 +31,7 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 1407,
                 RevolutionsPeriode_I_Dage = 88
             };
+            Sun.planets.Add(mercury);
 
             Planet venus = new Planet()
             {
@@ -41,6 +43,7 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 5832,
                 RevolutionsPeriode_I_Dage = 116
             };
+            Sun.planets.Add( venus );
 
             Planet earth = new Planet()
             {
@@ -52,6 +55,8 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 24,
                 RevolutionsPeriode_I_Dage = 365
             };
+            Sun.planets.Add(earth);
+
             Planet Mars = new Planet()
             {
                 Id = 4,
@@ -62,6 +67,8 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 24,
                 RevolutionsPeriode_I_Dage = 365
             };
+            Sun.planets.Add(Mars);
+
             Planet Jupiter = new Planet()
             {
                 Id = 5,
@@ -72,6 +79,8 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 10,
                 RevolutionsPeriode_I_Dage = 687
             };
+            Sun.planets.Add(Jupiter);
+
             Planet Saturn = new Planet()
             {
                 Id = 6,
@@ -82,6 +91,8 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 10,
                 RevolutionsPeriode_I_Dage = 10585
             };
+            Sun.planets.Add(Saturn);
+
             Planet Uranus = new Planet()
             {
                 Id = 7,
@@ -92,6 +103,8 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 17,
                 RevolutionsPeriode_I_Dage = 30660
             };
+            Sun.planets.Add(Uranus);
+
             Planet Neptune = new Planet()
             {
                 Id = 8,
@@ -102,6 +115,7 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 16,
                 RevolutionsPeriode_I_Dage = 60225
             };
+            Sun.planets.Add(Neptune);
 
             Moon Luna = new Moon()
             {
@@ -176,6 +190,7 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 22,
                 RevolutionsPeriode_I_Dage = 1
             };
+            Console.WriteLine(Sun._Position);
         }
     }
 }

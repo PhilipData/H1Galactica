@@ -13,6 +13,21 @@ namespace H1Galactica
         public Startype _Startype { get; set; }
         public int Temperature { get; set; }
 
-        List<Planet> planets = new List<Planet>();
+        public List<Planet> planets = new List<Planet>();
+
+        new public Position Position { get; }
+        public Star()
+        {
+            this.Position = new Position() { X = 0, Y = 0 };
+            planets = new List<Planet>();
+        }
+
+        //public new Position _Position
+        //{
+        //     //get;
+        //    get { return new Position() { X = 0, Y = 0 }; }
+        //    //set { }
+        //}
+
     }
 }

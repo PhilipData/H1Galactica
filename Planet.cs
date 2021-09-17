@@ -13,7 +13,7 @@ namespace H1Galactica
         public int RoationsPeriod_I_Timer { get; set; }
         public int RevolutionsPeriode_I_Dage { get; set; }
         public PlanetType _PlanetType { get; set; }
-        List<Moon> _Moon = new List<Moon>();
+        public List<Moon> _Moon = new List<Moon>();
 
         public int Distance(Star star)
         {
