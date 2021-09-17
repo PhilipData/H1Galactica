@@ -24,7 +24,7 @@ namespace H1Galactica
 
         //public new Position _Position
         //{
-        //     //get;
+        //    //get;
         //    get { return new Position() { X = 0, Y = 0 }; }
         //    //set { }
         //}

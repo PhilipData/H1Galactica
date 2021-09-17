@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace H1Galactica
 {
-    enum PlanetType { Terrestial, Giant, Dwarf, Gas_Giant }
+    enum PlanetType { Terrestial, Giant, Dwarf, GasGiant }
     class Planet : SpaceObjects
     {
         public int Diameter_I_M { get; set; }

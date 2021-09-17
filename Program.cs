@@ -75,7 +75,7 @@ namespace H1Galactica
                 Id = 5,
                 Name = "Jupiter",
                 _Position = (new SpaceObjects.Position() { X = 6, Y = 6 }),
-                _PlanetType = PlanetType.Terrestial,
+                _PlanetType = PlanetType.GasGiant,
                 Diameter_I_M = 69911000,
                 RoationsPeriod_I_Timer = 10,
                 RevolutionsPeriode_I_Dage = 687
@@ -87,7 +87,7 @@ namespace H1Galactica
                 Id = 6,
                 Name = "Saturn",
                 _Position = (new SpaceObjects.Position() { X = 7, Y = 7 }),
-                _PlanetType = PlanetType.Terrestial,
+                _PlanetType = PlanetType.GasGiant,
                 Diameter_I_M = 58232000,
                 RoationsPeriod_I_Timer = 10,
                 RevolutionsPeriode_I_Dage = 10585
@@ -99,7 +99,7 @@ namespace H1Galactica
                 Id = 7,
                 Name = "Uranus",
                 _Position = (new SpaceObjects.Position() { X = 8, Y = 8 }),
-                _PlanetType = PlanetType.Terrestial,
+                _PlanetType = PlanetType.GasGiant,
                 Diameter_I_M = 25362000,
                 RoationsPeriod_I_Timer = 17,
                 RevolutionsPeriode_I_Dage = 30660
@@ -209,7 +209,16 @@ namespace H1Galactica
 
             foreach (Planet PLanetCollection in Sun.planets)
             {
-
+                Console.WriteLine("\n\n");
+                Console.WriteLine($"Planet Id: {PLanetCollection.Id} \nName: {PLanetCollection.Name} \nCoordinates: {PLanetCollection._Position}\n" +
+                    $"PLanettype: {PLanetCollection._PlanetType}\nThe planets Diameter in meters:{PLanetCollection.Diameter_I_M}\n" +
+                    $"Rotation Period in hours: {PLanetCollection.RoationsPeriod_I_Timer}\nOrbiting the sun in days: {PLanetCollection.RevolutionsPeriode_I_Dage}");
+                foreach (var Moon in PLanetCollection._Moon)
+                {
+                    Console.WriteLine("\n");
+                    Console.WriteLine($"\t\tMoon Id: {Moon.Id} Name: {Moon.Name}\n\t\tMoon Coordinates{Moon._Position}\n\t\tThe Moons Diameter:{Moon.Diameter_I_M}\n\t\t" +
+                        $"Rotation Period:{Moon.RoationsPeriod_I_Timer}\n\t\tOrbit around the planet:{Moon.RevolutionsPeriode_I_Dage}");
+                }
             }
 
             Console.WriteLine(Sun._Position);
