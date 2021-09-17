@@ -7,6 +7,9 @@ namespace H1Galactica
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+
+
             Star Sun = new Star()
             {
                 Id = 1,
@@ -21,7 +24,7 @@ namespace H1Galactica
             {
                 Id = 1,
                 Name = "Mercury",
-                _Position = (new SpaceObjects.Position() { X = 0, Y = 0 }),
+                _Position = (new SpaceObjects.Position() { X = 2, Y = 2 }),
                 _PlanetType = PlanetType.Terrestial,
                 Diameter_I_M = 4880000,
                 RoationsPeriod_I_Timer = 1407,
@@ -32,7 +35,7 @@ namespace H1Galactica
             {
                 Id = 2,
                 Name = "Venus",
-                _Position = (new SpaceObjects.Position() { X = 0, Y = 0 }),
+                _Position = (new SpaceObjects.Position() { X = 3, Y = 3 }),
                 _PlanetType = PlanetType.Terrestial,
                 Diameter_I_M = 6051800,
                 RoationsPeriod_I_Timer = 5832,
@@ -43,7 +46,7 @@ namespace H1Galactica
             {
                 Id = 3,
                 Name = "Earth",
-                _Position = (new SpaceObjects.Position() { X = 0, Y = 0 }),
+                _Position = (new SpaceObjects.Position() { X = 4, Y = 4 }),
                 _PlanetType = PlanetType.Terrestial,
                 Diameter_I_M = 6371000,
                 RoationsPeriod_I_Timer = 24,
@@ -53,7 +56,7 @@ namespace H1Galactica
             {
                 Id = 4,
                 Name = "Mars",
-                _Position = (new SpaceObjects.Position() { X = 0, Y = 0 }),
+                _Position = (new SpaceObjects.Position() { X = 5, Y = 5 }),
                 _PlanetType = PlanetType.Terrestial,
                 Diameter_I_M = 3389500,
                 RoationsPeriod_I_Timer = 24,
@@ -63,7 +66,7 @@ namespace H1Galactica
             {
                 Id = 5,
                 Name = "Jupiter",
-                _Position = (new SpaceObjects.Position() { X = 0, Y = 0 }),
+                _Position = (new SpaceObjects.Position() { X = 6, Y = 6 }),
                 _PlanetType = PlanetType.Terrestial,
                 Diameter_I_M = 69911000,
                 RoationsPeriod_I_Timer = 10,
@@ -73,7 +76,7 @@ namespace H1Galactica
             {
                 Id = 6,
                 Name = "Saturn",
-                _Position = (new SpaceObjects.Position() { X = 0, Y = 0 }),
+                _Position = (new SpaceObjects.Position() { X = 7, Y = 7 }),
                 _PlanetType = PlanetType.Terrestial,
                 Diameter_I_M = 58232000,
                 RoationsPeriod_I_Timer = 10,
@@ -83,7 +86,7 @@ namespace H1Galactica
             {
                 Id = 7,
                 Name = "Uranus",
-                _Position = (new SpaceObjects.Position() { X = 0, Y = 0 }),
+                _Position = (new SpaceObjects.Position() { X = 8, Y = 8 }),
                 _PlanetType = PlanetType.Terrestial,
                 Diameter_I_M = 25362000,
                 RoationsPeriod_I_Timer = 17,
@@ -93,7 +96,7 @@ namespace H1Galactica
             {
                 Id = 8,
                 Name = "Neptune",
-                _Position = (new SpaceObjects.Position() { X = 0, Y = 0 }),
+                _Position = (new SpaceObjects.Position() { X = 9, Y = 9 }),
                 _PlanetType = PlanetType.Terrestial,
                 Diameter_I_M = 24622000,
                 RoationsPeriod_I_Timer = 16,
@@ -104,7 +107,7 @@ namespace H1Galactica
             {
                 Id = 1,
                 Name = "Luna",
-                _Position = (new SpaceObjects.Position() {  X = 0, Y = 0 }),
+                _Position = (new SpaceObjects.Position() {  X = 4, Y = 5 }),
                 Diameter_I_M = 1737400,
                 RoationsPeriod_I_Timer = 648,
                 RevolutionsPeriode_I_Dage = 27,
