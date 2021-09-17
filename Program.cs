@@ -8,14 +8,15 @@ namespace H1Galactica
         {
             Console.WriteLine("Hello World!");
 
-
-
+            //star.list = new list<Planet>() {
+            //    new Planet(){}
+            //};
             Star Sun = new Star()
             {
                 Id = 1,
                 Name = "Sun",
                 //_Position = (new SpaceObjects.Position(){X = 5, Y = 0}),
-                _Position = new Star.Position{ X = 0, Y = 1 },
+                _Position = new Star.Position{ X = 0, Y = 1 },//bliver overrided af en constructor i class'en star
                 _Startype = Startype.YellowDwarf,
                 Temperature = 5500
 
@@ -127,6 +128,8 @@ namespace H1Galactica
                 RevolutionsPeriode_I_Dage = 27,
                 Orbiting = earth
             };
+            earth._Moon.Add(Luna);
+
             Moon Titan = new Moon()
             {
                 Id = 2,
@@ -136,6 +139,8 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 382,
                 RevolutionsPeriode_I_Dage = 16
             };
+            Saturn._Moon.Add(Titan);
+
             Moon Phobos = new Moon()
             {
                 Id = 3,
@@ -145,7 +150,9 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 8,
                 RevolutionsPeriode_I_Dage = 0
             };
-            Moon Europe = new Moon()
+            Mars._Moon.Add(Phobos);
+
+            Moon Europa = new Moon()
             {
                 Id = 4,
                 Name = "Europe",
@@ -154,6 +161,8 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 84,
                 RevolutionsPeriode_I_Dage = 3
             };
+            Jupiter._Moon.Add(Europa);
+
             Moon Deimos = new Moon()
             {
                 Id = 5,
@@ -163,6 +172,8 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 30,
                 RevolutionsPeriode_I_Dage = 1
             };
+            Mars._Moon.Add(Deimos);
+
             Moon Ganymedes = new Moon()
             {
                 Id = 6,
@@ -172,6 +183,8 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 171,
                 RevolutionsPeriode_I_Dage = 7
             };
+            Jupiter._Moon.Add(Ganymedes);
+
             Moon Io = new Moon()
             {
                 Id = 7,
@@ -181,6 +194,8 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 172,
                 RevolutionsPeriode_I_Dage = 2
             };
+            Jupiter._Moon.Add(Io);
+
             Moon Mimas = new Moon()
             {
                 Id = 8,
@@ -190,6 +205,13 @@ namespace H1Galactica
                 RoationsPeriod_I_Timer = 22,
                 RevolutionsPeriode_I_Dage = 1
             };
+            Saturn._Moon.Add(Mimas);
+
+            foreach (Planet PLanetCollection in Sun.planets)
+            {
+
+            }
+
             Console.WriteLine(Sun._Position);
         }
     }
